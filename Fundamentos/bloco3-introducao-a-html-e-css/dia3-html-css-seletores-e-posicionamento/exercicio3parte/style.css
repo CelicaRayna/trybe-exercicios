@@ -1,0 +1,15 @@
+h1, p {
+    text-align: center;
+}
+
+ul li:hover, ol li:hover {
+    background-color: red;
+}
+li:active {
+    font-family: sans-serif, Helvetica;
+    font-size: 20px;
+    color: aliceblue;
+  }
+li {
+    list-style: none;
+  }
