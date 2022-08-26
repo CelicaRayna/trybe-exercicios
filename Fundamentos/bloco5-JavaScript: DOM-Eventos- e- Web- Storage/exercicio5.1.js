@@ -1,0 +1,1 @@
+document.getElementById('page-title').innerText = ('Esse agora é o título')
