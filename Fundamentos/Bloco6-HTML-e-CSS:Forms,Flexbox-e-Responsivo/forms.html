@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Fórmulário de viagem da Trybe</h1>
+    <form action="" method="get">
+        <div class="">
+            <label for="input-name">Nome:</label>
+            <input type="text" name="input-name" id="input-name" required minlength="10" maxlength="40">
+        </div>
+        <br>
+        <div>
+            <label for="input-email">E-mail</label>
+            <input type="email" name="input-email" id="input-email" required minlength="10" maxlength="50">
+            <br>
+            <br>
+        </div>
+        <div>
+            <p>Destino preferido</p>
+            <input type="radio" name="hub" id="hub1" value="cidade">Cidade
+            <input type="radio" name="bub" id="hub2" value="campo">Campo
+            <input type="radio" name="hub" id="hub3" value="praia">Praia
+            <input type="radio" name="hub" id="hub4" value="montanha"> Montanhas
+        </div>
+        <br>
+            
+        <div>
+            <p>Porque você deveria ganhar essa viagem?</p>
+            <textarea maxlength="500" name="" id="" cols="30" rows="10" placeholder="Justifique sua resposta"></textarea>
+        </div>
+        <br>
+        <div>
+            <p>Qual a melhor data para viagem?</p>
+            <input type="date" name="input-date" id="input-date">
+        </div>
+        <br>
+
+        <div>
+            <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+            <label for="promocoes-checkbox1">
+            <input type="checkbox" name="promocoes-checkbox" id="promocoes-checkbox1" value="is-valid-promo">Concordo
+            </label>
+        </div>
+
+        <br>
+        
+        <div>
+            <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
+            <label for="img-autorizada">
+            <input type="checkbox" name="img-autorizada" id="img-autorizada" value="is-valid-img">Concordo
+            </label>
+        </div>
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+            
+    </form>
+    <script src="script.js"></script>
+            
+</body>
+</html>
+            
+
+        
