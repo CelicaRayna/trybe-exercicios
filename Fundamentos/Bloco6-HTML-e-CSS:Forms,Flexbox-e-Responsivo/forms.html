@@ -9,55 +9,57 @@
 <body>
     <h1>Fórmulário de viagem da Trybe</h1>
     <form action="" method="get">
-        <div class="">
-            <label for="input-name">Nome:</label>
-            <input type="text" name="input-name" id="input-name" required minlength="10" maxlength="40">
-        </div>
+        <fieldset> 
+            <label for="full-name">Nome completo:</label>
+            <input type="text" name="input-name" id="full-name" placeholder="Digite seu nome completo" required minlength="10" maxlength="40">
+        </fieldset>
         <br>
-        <div>
+        <fieldset>
             <label for="input-email">E-mail</label>
-            <input type="email" name="input-email" id="input-email" required minlength="10" maxlength="50">
-            <br>
-            <br>
-        </div>
-        <div>
+            <input type="email" name="input-email" id="input-email" placeholder="Digite seu email" required minlength="10" maxlength="50">
+        </fieldset>
+        <br>
+        <fieldset>
             <p>Destino preferido</p>
-            <input type="radio" name="hub" id="hub1" value="cidade">Cidade
-            <input type="radio" name="bub" id="hub2" value="campo">Campo
-            <input type="radio" name="hub" id="hub3" value="praia">Praia
-            <input type="radio" name="hub" id="hub4" value="montanha"> Montanhas
-        </div>
+            <label for="hub1">Cidade</label>
+            <input type="radio" id="hub1" className="radios" name="destinations" value="Cidade" required>
+            <label for="hub2">Campo</label>
+            <input type="radio" id="hub2" className="radios" name="destinations" value="Campo" required>
+            <label for="hub">Praia</label>
+            <input type="radio" id="hub3" className="radios" name="destinations" value="Praia" required>
+            <label for="hub4">Montanhas</label>
+            <input type="radio" id="hub4" className="radios" name="destinations" value="Montanhas" required>
+        </fieldset>
         <br>
             
-        <div>
+     <fieldset>
             <p>Porque você deveria ganhar essa viagem?</p>
             <textarea maxlength="500" name="" id="" cols="30" rows="10" placeholder="Justifique sua resposta"></textarea>
-        </div>
+        </fieldset>
         <br>
-        <div>
+       <fieldset>
             <p>Qual a melhor data para viagem?</p>
-            <input type="date" name="input-date" id="input-date">
-        </div>
+            <input type="date" name="input-date" id="input-date" required>
+        </fieldset>
         <br>
 
-        <div>
+       <fieldset>
             <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
-            <label for="promocoes-checkbox1">
-            <input type="checkbox" name="promocoes-checkbox" id="promocoes-checkbox1" value="is-valid-promo">Concordo
-            </label>
-        </div>
+            <label for="promocoes-checkbox1">Concordo</label>
+            <input type="checkbox" name="promocoes-checkbox" id="promocoes" value="promocoes" required>
+        </fieldset>
 
         <br>
-        
-        <div>
+
+       <fieldset>
             <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
-            <label for="img-autorizada">
-            <input type="checkbox" name="img-autorizada" id="img-autorizada" value="is-valid-img">Concordo
-            </label>
-        </div>
+            <label for="img-autorizada">Concordo </label>
+            <input type="checkbox" name="img-autorizada" id="img-autorizada" value="is-valid-img" required>
+          
+        </fieldset>
         <br>
-        <br>
-        <button type="submit">Enviar</button>
+       
+        <button type="submit">Participar do concurso Trybe Trip</button>
         <button type="reset">Limpar</button>
             
     </form>
