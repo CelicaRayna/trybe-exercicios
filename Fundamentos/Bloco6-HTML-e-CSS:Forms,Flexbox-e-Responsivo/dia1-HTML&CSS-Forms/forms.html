@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
-    <head>
-    <h1>Fórmulário de viagem da Trybe</h1>
-    </head>
+    <header>
+        <h1>Fórmulário de viagem da Trybe</h1>
+    </header>
     <form action="" method="get">
-<div>            <label for="full-name">Nome completo:</label>
-            <input type="text" name="input-name" id="full-name" placeholder="Digite seu nome completo" required minlength="10" maxlength="40">
-</div>
+        <div> 
+            <label for="full-name">Nome completo:</label>
+            <input type="text" name="input-name" id="full-name" placeholder="Digite seu nome completo" required
+                minlength="10" maxlength="40">
+        </div>
         <br>
-        <fieldset>
+        <div>
             <label for="input-email">E-mail</label>
-            <input type="email" name="input-email" id="input-email" placeholder="Digite seu email" required minlength="10" maxlength="50">
-        </fieldset>
+            <input type="email" name="input-email" id="input-email" placeholder="Digite seu email" required
+                minlength="10" maxlength="50">
+        </div>
         <br>
-        <fieldset>
+        <div>
             <p>Destino preferido</p>
             <label for="hub1">Cidade</label>
             <input type="radio" id="hub1" className="radios" name="destinations" value="Cidade" required>
@@ -30,44 +35,43 @@
             <input type="radio" id="hub3" className="radios" name="destinations" value="Praia" required>
             <label for="hub4">Montanhas</label>
             <input type="radio" id="hub4" className="radios" name="destinations" value="Montanhas" required>
-        </fieldset>
+        </div>
         <br>
-            
-     <fieldset>
+
+        <div>
             <p>Porque você deveria ganhar essa viagem?</p>
-            <textarea maxlength="500" name="" id="" cols="30" rows="10" placeholder="Justifique sua resposta"></textarea>
-        </fieldset>
+            <textarea maxlength="500" name="" id="" cols="30" rows="10"
+                placeholder="Justifique sua resposta"></textarea>
+        </div>
         <br>
-       <fieldset>
+        <div>
             <p>Qual a melhor data para viagem?</p>
             <input type="date" name="input-date" id="input-date" required>
-        </fieldset>
+        </div>
         <br>
 
-       <fieldset>
+        <div>
             <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
             <label for="promocoes-checkbox1">Concordo</label>
-            <input type="checkbox" name="promocoes-checkbox" id="promocoes" value="promocoes" >
-        </fieldset>
+            <input type="checkbox" name="promocoes-checkbox" id="promocoes" value="promocoes">
+        </div>
 
         <br>
 
-       <fieldset>
+        <div>
             <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
             <label for="img-autorizada">Concordo </label>
             <input type="checkbox" name="img-autorizada" id="img-autorizada" value="is-valid-img" required>
-          
-        </fieldset>
+
+        </div>
         <br>
-       
+
         <button type="submit" id="submit-btn">Participar do concurso Trybe Trip</button>
         <button type="button" id="clear-btn">Limpar</button>
-            
+
     </form>
     <script src="script.js"></script>
-            
-</body>
-</html>
-            
 
-        
+</body>
+
+</html>
