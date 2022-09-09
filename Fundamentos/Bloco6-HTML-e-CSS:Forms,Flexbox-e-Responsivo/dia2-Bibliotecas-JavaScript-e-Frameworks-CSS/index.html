@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário-Trybe-Trip</title>
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,64 +14,64 @@
     <header class="container text-center">
         <h1>Fórmulário de viagem da Trybe</h1>
     </header>
-
-
-    <form action="" method="get">
+    <form class="js-form" action="" method="get">
+        <fieldset class="form-group">
         <div class="container"> 
-            <label class="text-center" for="full-name">Nome completo:</label>
-            <input type="text" name="input-name" id="full-name" placeholder="Digite seu nome completo" required
+            <label class="form-label" for="full-name">Nome completo:</label>
+            <input class="form-control"type="text" name="input-name" id="full-name" placeholder="Digite seu nome completo" required
                 minlength="10" maxlength="40">
         </div>
         <br>
         <div class="container">
-            <label for="input-email">E-mail</label>
-            <input type="email" name="input-email" id="input-email" placeholder="Digite seu email" required
+            <label class="form-label"for="input-email">E-mail</label>
+            <input class="form-control"type="email" name="input-email" id="input-email" placeholder="Digite seu email" required
                 minlength="10" maxlength="50">
         </div>
         <br>
         <div class="container">
             <p>Destino preferido</p>
-            <label for="hub1">Cidade</label>
-            <input type="radio" id="hub1" className="radios" name="destinations" value="Cidade" required>
+            <label class="form-label" for="hub1">Cidade</label>
+            <input class="form-check-input"type="radio" id="hub1" className="radios" name="destinations" value="Cidade" required>
             <label for="hub2">Campo</label>
-            <input type="radio" id="hub2" className="radios" name="destinations" value="Campo" required>
-            <label for="hub">Praia</label>
-            <input type="radio" id="hub3" className="radios" name="destinations" value="Praia" required>
-            <label for="hub4">Montanhas</label>
-            <input type="radio" id="hub4" className="radios" name="destinations" value="Montanhas" required>
+            <input class="form-check-input"type="radio" id="hub2" className="radios" name="destinations" value="Campo" required>
+            <label class="form-label" for="hub">Praia</label>
+            <input class="form-check-input"type="radio" id="hub3" className="radios" name="destinations" value="Praia" required>
+            <label class="form-label" for="hub4">Montanhas</label>
+            <input class="form-check-input"type="radio" id="hub4" className="radios" name="destinations" value="Montanhas" required>
         </div>
         <br>
 
         <div class="container">
             <p>Porque você deveria ganhar essa viagem?</p>
-            <textarea maxlength="500" name="" id="" cols="30" rows="10"
+            <textarea class="form-control"maxlength="500" name="why" id="why" cols="30" rows="10"
                 placeholder="Justifique sua resposta"></textarea>
         </div>
         <br>
         <div class="container">
             <p>Qual a melhor data para viagem?</p>
-            <input type="date" name="input-date" id="input-date" required>
+            <input class="form-control"type="date" name="input-date" id="input-date" required>
         </div>
         <br>
 
         <div class="container">
             <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
-            <label for="promocoes-checkbox1">Concordo</label>
-            <input type="checkbox" name="promocoes-checkbox" id="promocoes" value="promocoes">
+            <label class="form-label"for="promocoes-checkbox1">Concordo</label>
+            <input class="form-check-input"type="checkbox" name="promocoes-checkbox" id="promocoes" value="promocoes">
         </div>
 
         <br>
 
         <div class="container">
             <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
-            <label for="img-autorizada">Concordo </label>
-            <input type="checkbox" name="img-autorizada" id="img-autorizada" value="is-valid-img" required>
+            <label class="form-label"for="img-autorizada">Concordo </label>
+            <input class="form-check-input"type="checkbox" name="img-autorizada" id="img-autorizada" value="is-valid-img" required>
 
         </div>
         <br>
+    </fieldset>
 
-        <button type="submit" id="submit-btn">Participar do concurso Trybe Trip</button>
-        <button type="button" id="clear-btn">Limpar</button>
+        <button type="submit" class="btn btn-primary submit-button" id="submit-btn">Participar do concurso Trybe Trip</button>
+        <button type="button" class="btn btn-danger clear-button" id="clear-btn">Limpar</button>
 
     </form>
     <script src="script.js"></script>
