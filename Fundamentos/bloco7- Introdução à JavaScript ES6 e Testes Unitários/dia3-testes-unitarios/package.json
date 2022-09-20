@@ -1,0 +1,23 @@
+{
+  "name": "trybe-exercicios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CelicaRayna/trybe-exercicios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CelicaRayna/trybe-exercicios/issues"
+  },
+  "homepage": "https://github.com/CelicaRayna/trybe-exercicios#readme",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  }
+}

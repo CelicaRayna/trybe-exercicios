@@ -1,0 +1,17 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/Fundamentos/bloco7- Introdução à JavaScript ES6 e Testes Unitários/dia1- JavaScript ES6 - let, const, arrow functions e template literals Exercícios - agora, a prática/arrayemordemcrescente.js"
+        }
+    ]
+}
